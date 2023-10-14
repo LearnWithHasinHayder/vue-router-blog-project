@@ -5,6 +5,7 @@ import About from '../components/About.vue'
 import Contact from '../components/Contact.vue'
 import Blog from '../components/Blog.vue'
 import RightSidebar from '../components/RightSidebar.vue'
+import Post from '../components/Post.vue'
 
 const routes = [
     {
@@ -26,7 +27,13 @@ const routes = [
         path: '/blog',
         component: Blog,
         name: 'blog'
+    },
+    {
+        path: '/posts/:id',
+        component: Post,
+        name: 'post'
     }
+
     // {
     //     path: '/blog',
     //     components:{
