@@ -39,7 +39,7 @@ function loadMorePosts() {
     <div class="my-5">
         <!-- {{ posts }} -->
     </div>
-    <article v-for="post in posts" class="mb-10">
+    <article v-for="post in posts" class="mb-10" :key="post.id">
         <router-link :to="{ name: 'post', params: { id: post.id } }">
             <h1 class="text-xl mb-2">{{ post.title }}</h1>
             <p>
